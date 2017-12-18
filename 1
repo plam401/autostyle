@@ -1,1 +1,31 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./js/vue.js"></script>
+</head>
+<body>
+<div id="app" class="app">
+    <div>{{ message }}</div>
+    <input type="text" v-model="pt" @click="show">
+</div>
+<script>
+    new Vue({
+        el:'#app',
+        data :{
+            message:'liyuan',
+            pt:'111'
+        },
+        computed(){
+
+        },
+        methods:{
+            show(){
+                alert(this.pt)
+            }
+        }
+    })
+</script>
+</body>
+</html>
